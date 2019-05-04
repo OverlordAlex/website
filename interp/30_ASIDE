@@ -1,0 +1,8 @@
+<aside class="site-aside">
+    <img src="resources/images/profile.jpg" 
+         alt="A picture of the author"
+         title="My childhood doggo"
+         syle="max-width:320px;max-height:240px"
+    >
+    A personal blog with random musings, anecdotes, and sometimes even something insightful.
+</aside>

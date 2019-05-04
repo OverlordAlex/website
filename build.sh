@@ -5,11 +5,11 @@ set -e
 # create build directory
 rm -rf out/
 mkdir out/
-cp -r src/ out/
+cp -r src/* out/
 
 # interpolate
 rm -f interp/99_NOW
-date > interp/99_NOW
+echo "<time>"$(date)"</time>" > interp/99_NOW
 
 for f in interp/*; do
     filename=$(basename "$f" | cut -c4-)
