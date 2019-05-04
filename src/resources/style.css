@@ -3,6 +3,10 @@ img {
     height: auto;
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+}
+
 .site {
     display: grid;
     grid-gap: 1ch;
@@ -25,6 +29,24 @@ img {
     }
 }
 
+.site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.site-nav li{
+    float: left;
+}
+.site-nav a{
+    display: block;
+    padding-right: 1ch;
+}
+/*.site-nav li a:hover {
+    background-color: #555;
+    color: white;
+}*/
+
 .site-aside {
     grid-area: aside;
 }
@@ -35,13 +57,8 @@ img {
 
 .main {
     grid-area: main;
+    max-width: 70ch;
 }
-
-/*.main {
-  max-width: 70ch;
-  padding: 1.5rem;
-  margin: auto;
-}*/
 
 .site-footer {
     grid-area: footer;
