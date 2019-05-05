@@ -26,4 +26,7 @@ find out/ -type f -exec sed -i -r "s/##(\[[[:digit:]]+\])(.+)##/<tr id=\"citatio
 recent=$(find out/blog/*.html -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" ")
 cp "$recent" out/index.html
 
-# TODO generate the sitemap
+# generate the sitemap
+rm -f out/sitemap
+tree -H '' -C -U -P "*html" --prune --noreport out/ -o out/sitemap.html
+tree -X -C -U -P "*html" --prune --noreport out/ -o out/sitemap.xml
