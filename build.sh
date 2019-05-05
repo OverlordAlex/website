@@ -15,3 +15,8 @@ for f in interp/*; do
     filename=$(basename "$f" | cut -c4-)
     find out/ -type f -exec sed -e "/##$filename##/  {" -e "r $f" -e "d" -e "}" -i {} \;
 done
+
+# find the most recent blog post and make that the home page
+recent=$(find out/blog -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" ")
+cp $recent out/index.html
+
