@@ -17,6 +17,7 @@ for f in interp/*; do
 done
 
 # find the most recent blog post and make that the home page
-recent=$(find out/blog -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" ")
-cp $recent out/index.html
+recent=$(find out/blog/*.html -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" ")
+cp "$recent" out/index.html
 
+# TODO generate the sitemap

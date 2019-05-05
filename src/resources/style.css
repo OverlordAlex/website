@@ -7,6 +7,26 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
+pre code {
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    display: block;
+    padding: 2ch;
+    overflow: auto;
+}
+
+blockquote {
+    border-left: 1px solid darkgrey;
+    padding-left: 2ch;
+    white-space: pre-line;
+}
+
+code, q {
+    background-color: lightgrey;
+    padding: 0.5ch;
+    display: inline-block;
+}
+
 .site {
     display: grid;
     grid-gap: 1ch;
