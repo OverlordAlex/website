@@ -92,6 +92,12 @@ code, q {
     max-width: 70ch;
 }
 
+.references {
+    font-size: 0.8em;
+    display: block;
+    list-style-type: none;
+}
+
 .site-footer {
     grid-area: footer;
 }
