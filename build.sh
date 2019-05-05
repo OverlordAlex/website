@@ -20,7 +20,7 @@ done
 # do the inline citations
 find out/ -type f -exec sed -i -r "s/##\^(\[[[:digit:]]+\])##/<sup><a href=\"#citation\1\">\1<\/a><\/sup>/g" {} \;
 # do the citaiton section
-find out/ -type f -exec sed -i -r "s/##(\[[[:digit:]]+\])(.+)##/<tr id=\"citation\1\"><td align=\"right\">\1<\/td><td>\2<\/td><\/tr>/g" {} \;
+find out/ -type f -exec sed -i -r "s/##(\[[[:digit:]]+\])(.+)##/<tr id=\"citation\1\"><td align=\"right\" valign=\"top\">\1<\/td><td>\2<\/td><\/tr>/g" {} \;
 
 # find the most recent blog post and make that the home page
 recent=$(find out/blog/*.html -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" ")
