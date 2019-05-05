@@ -27,6 +27,6 @@ recent=$(find out/blog/*.html -type f -printf '%T@ %p\n' | sort -n | tail -1 | c
 cp "$recent" out/index.html
 
 # generate the sitemap
-rm -f out/sitemap
-tree -H '' -C -U -P "*html" --prune --noreport out/ -o out/sitemap.html
-tree -X -C -U -P "*html" --prune --noreport out/ -o out/sitemap.xml
+rm -f out/sitemap*
+tree -I 'sitemap*' -H '' -C -U -P "*html" --prune --noreport out/ -o out/sitemap.html
+tree -I 'sitemap*' -X    -C -U -P "*html" --prune --noreport out/ -o out/sitemap.xml

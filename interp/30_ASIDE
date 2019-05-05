@@ -1,6 +1,6 @@
 <aside class="site-aside">
     <figure style="display:inline-block">
-        <img src="resources/images/profile.jpg" 
+        <img src="/resources/images/profile.jpg" 
              alt="A picture of the author"
              title="My childhood doggo"
              syle="max-width:320px;max-height:240px"
