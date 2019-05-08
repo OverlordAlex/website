@@ -20,3 +20,8 @@ src/resources - static resources required
 * Make an image replacement macro for correct responsive images
 * Work on the CSS colours (dark theme?)
 * Runlocal for local testing
+* Add link-backs to the footnotes
+* Add styling to have footnotes appear in-line on the side when the page is large enough
+* Condense multiple footnotes into a single <sup>
+* Add searching functionality?
+  * Add labels or tags to posts

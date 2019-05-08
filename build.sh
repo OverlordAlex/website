@@ -15,7 +15,7 @@ echo "<time>"$(date)"</time>" > interp/99_NOW
 # TODO: work out how to template in without changing mtime
 rm -f interp/99_POST_LIST
 latest=$(find out/blog/*.html -type f -printf '%T@ %p\n' | sort -n | tail -5 | cut -f2- -d" ")
-for f in "$latest"; do
+for f in $latest; do
     title=$(grep -A1 "class=\"heading" "$f" | grep -oP "h1>\K(.+)(?=<)")
     url=$(echo "$f" | cut -f2- -d"/")
     echo "<li><a href=\"/$url\">$title</a></li>" >> interp/99_POST_LIST
