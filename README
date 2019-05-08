@@ -1,8 +1,0 @@
-Use ./build.sh to create the website in ./out/*
-Then use ./deploy.sh to copy it to the website repo and push it to deploy
-
-
-interp - common elements that are interpolated into the src
-templates - common structure for similar pages
-src - website contents
-src/resources - static resources required
