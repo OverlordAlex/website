@@ -25,3 +25,5 @@ src/resources - static resources required
 * Condense multiple footnotes into a single <sup>
 * Add searching functionality?
   * Add labels or tags to posts
+* Include commit messages to the pages repo to form a changelog
+* Add custom 404 page
